@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Up Diamond ML</title>
+    <link rel="stylesheet" href="stylesheet4.css">
+
+<script type="text/javascript">
+    
+function check()
+{
+    for( i = 0; i <= document.form1.RB.length; i++ ){
+
+        if(document.form1.RB[0].checked==true) {
+              document.form1.price.value=5000;
+        }
+        else if(document.form1.RB[1].checked==true) {
+              document.form1.price.value=12000;
+        }
+        else if(document.form1.RB[2].checked==true) {
+             document.form1.price.value=18000;
+        }
+      else if(document.form1.RB[3].checked==true) {
+             document.form1.price.value=20000;
+        }
+      else if(document.form1.RB[4].checked==true) {
+             document.form1.price.value=35000;
+        }
+       else if(document.form1.RB[5].checked==true) {
+             document.form1.price.value=37000;
+        }
+       else if(document.form1.RB[6].checked==true) {
+             document.form1.price.value=56000;
+        }
+       else if(document.form1.RB[7].checked==true) {
+             document.form1.price.value=67000;
+        }
+       else if(document.form1.RB[8].checked==true) {
+             document.form1.price.value=75000;
+        }
+       else if(document.form1.RB[9].checked==true) {
+             document.form1.price.value=85000;
+        }
+       else if(document.form1.RB[10].checked==true) {
+             document.form1.price.value=95000;
+        }
+       else if(document.form1.RB[11].checked==true) {
+             document.form1.price.value=110000;
+        }
+       else if(document.form1.RB[12].checked==true) {
+             document.form1.price.value=150000;
+        }
+       else if(document.form1.RB[13].checked==true) {
+             document.form1.price.value=170000;
+        }
+       else if(document.form1.RB[14].checked==true) {
+             document.form1.price.value=185000;
+        }
+       else if(document.form1.RB[15].checked==true) {
+             document.form1.price.value=340000;
+        }
+    
+}
+}
+
+    function sub(){
+      var id = document.getElementById("ID").value;
+      var server = document.getElementById("server").value;
+      var telepon = document.getElementById("nomor").value;
+
+      if( id != "" && server != "" && telepon != ""){
+        alert("Pembayaran Topup Anda Berhasil!");
+      }
+    }
+
+    function checkNum() 
+{
+    x = event.charCode;
+    if (( x >= 65  && x <=90) || (x >= 97 && x <=122))
+    {
+        alert("Masukkan Angka.");
+        document.form1.telp.value='';
+    }
+}
+
+
+
+</script>
+</head>
+
+
+<body>
+
+    <nav>
+        <div class="navigasi">
+            <div class="logo"><img src="images/logo.png" width="58" height="21" style="margin-top: 10px;"></div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="home4.html">Home</a></li>
+                        <li><a href="listharga.html">List Harga</a></li>
+                        <li><a href="transaksi.html">Transaksi</a></li>
+                        <li><a href="kontak.html">Kontak Kami</a></li>
+                    </ul>
+                </div>
+            </div>
+    </nav>
+
+        <div class="container">
+            <div class="header">
+                <div class="judul">
+                    <h6 style=" margin-top: 30px; margin-bottom: 10px;">Isi form di bawah ini untuk melakukan transaksi</h6>
+                    <p style="font-style: italic; font-size:13px; font-weight: normal;">Pastikan untuk mengisi User ID dan Server dengan benar.</p>
+            </div>
+
+        <div class="form">
+            <center>
+            <FORM name="form1">
+    <div class="transaksi">
+                    
+                    <div class="forminput">
+                        <input type="id" id="ID" required="" placeholder="ID">
+                        
+                    </div>
+                    <div class="forminput">
+                        <input type="server" id="server" required="" placeholder="Server">
+                        
+                        <p style="font-style: italic; font-size:13px; font-weight: normal; margin-top: 10px; text-align: left;">Untuk mengetahui User ID Anda, silakan klik menu profile dibagian kiri atas pada menu utama game. User ID akan terlihat dibagian bawah Nama Karakter Game Anda. Contoh : 12345678(1234).</p>
+                    </div>
+                                        <div class="bayar"> 
+                
+                        <span><center style="margin-bottom: 27px; margin-top: 50px; font-size: 20px; font-family: system-ui;">Pilih metode pembayaran</center></span>
+                         
+                            <ul>
+                                <li><input type="radio" name="RadioButton" onclick="check();" required><img src="images/ShopeePay.png" width="160px" height="90px"></li></input>
+                                <li><input type="radio" name="RadioButton" onclick="check();" required><img src="images/GoPay.png" width="160px" height="110px"></li></input>
+                                <li><input type="radio" name="RadioButton" onclick="check();" required><img style="margin-bottom: 16px;" src="images/ovo.png" width="145px" height="50px"></li></input>
+                            </ul>   
+
+                            <br>
+
+                        <span><center style="margin-bottom: 67px; margin-top: 50px; font-size: 20px;">Pilih jumlah Diamond</center></span>
+
+                                           
+                                <input type="radio" name="RB" onclick="check();" required>
+                                <label id="label1">14 Diamonds</label></input>
+                                <input type="radio" name="RB" onclick="check();" required>
+                                <label id="label1">42 Diamonds</label></input>
+                                <input type="radio" name="RB" onclick="check();" required>
+                                <label id="label1">70 Diamonds</label></input>
+                                <input type="radio" name="RB" onclick="check();" required>
+                                <label id="label1">86 Diamonds</label></input>
+                                <br>
+                                <br>
+                                <br>
+                                <input type="radio" name="RB" onclick="check();" required>
+                                <label id="label2">140 Diamonds</label></input>
+                                <input type="radio" name="RB" onclick="check();" required>
+                                <label id="label2">172 Diamonds</label></input>
+                                <input type="radio" name="RB" onclick="check();" required>
+                                <label id="label2">257 Diamonds</label></input>
+                                <input type="radio" name="RB" onclick="check();" required>
+                                <label id="label2">284 Diamonds</label></input>
+                                <br>
+                                <br>
+                                <br>
+                                <input type="radio" name="RB" onclick="check();" required>
+                                <label id="label2">344 Diamonds</label></input>
+                                <input type="radio" name="RB" onclick="check();" required>
+                                <label id="label2">355 Diamonds</label></input>
+                                <input type="radio" name="RB" onclick="check();" required>
+                                <label id="label2">429 Diamonds</label></input>
+                                <input type="radio" name="RB" onclick="check();" required>
+                                <label id="label2">514 Diamonds</label></input>
+                                <br>
+                                <br>
+                                <br>
+                                <input type="radio" name="RB" onclick="check();" required>
+                                <label id="label3">706 Diamonds</label></input>
+                                <input type="radio" name="RB" onclick="check();" required>
+                                <label id="label3">716 Diamonds</label></input>
+                                <input type="radio" name="RB" onclick="check();" required>
+                                <label id="label3">878 Diamonds</label></input>
+                                <input type="radio" name="RB" onclick="check();" required>
+                                <label style="padding: 10px 8px; width: 50%; position: static;">1446 Diamonds</label></input>
+                                                
+
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            
+
+
+<span style="font-family: system-ui; font-size: 19px; margin-right: 10px; ">Harga Diamond</span>
+<INPUT id="hargadiamond" type="text" name="price" disabled>
+
+<br>
+<br>
+<br>
+<br>
+
+<div class="forminput">
+<input style= "width: 80%;" type="text" id="nomor" name="telp" required="" placeholder="Nomor Telepon" onkeypress="checkNum();">
+
+</FORM>
+                
+                    </div>
+
+
+
+                    <br><br><br>
+                    <div class="forminput">
+                        <Input ID="submit" type="submit" onclick="sub();" value="ORDER NOW">
+                    </div>
+
+                </div>
+            </form>
+        </center>
+        </div>
+
+
+            </div>
+        </div>
+</div>
+
+            
+    <footer>
+        <center>&copy; Copyright Reserved.</center>
+    </footer>
+
+</body>
+</html>
